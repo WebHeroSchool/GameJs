@@ -1,0 +1,178 @@
+body {
+  margin: 0 auto;
+  min-width: 1px;
+  max-width: 1440px;
+  height: 100vh;
+  background: url(images/Background.png);
+  background-size: cover;
+  overflow: hidden;
+	
+}
+
+.container {
+  display: block;
+  width: 100%;
+  padding-right: 50px;
+}
+
+.titles {
+  padding-left: 103px;
+  padding-top: 146px;
+  color: white;
+}
+
+.title {
+  font-size: 57px;
+  margin-bottom: 0;
+  margin-top: 0;
+}
+
+.subtitle {
+	font-style: normal;
+	font-size: 19px;
+	margin-bottom: 60px;
+}
+
+.level {
+  list-style: none;
+  padding-left: 192px;
+  margin-bottom: 114px;
+}
+
+li {
+	position: relative;
+	color: white;
+	font-size: 50px;
+	cursor: pointer;
+	padding-right: 24px;
+}
+
+.active:before {
+content:url(images/Rectangle.png);
+position: absolute;
+left: -34px;
+}
+
+.start {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  box-sizing: border-box;
+
+}
+
+.btn {
+  cursor: pointer;
+  padding: 29px 85px;
+  height: 50%;
+  background: #D62B2E;
+  color: white;
+  font-size: 2em;
+  border-color: #D62B2E;
+  text-align: center;
+
+}
+
+.img {
+  position: relative;
+  bottom: 180px;
+
+}
+
+.simple {
+  margin: 0 auto;
+  display: none;
+  width: 50%;
+  padding-top: 300px;
+	justify-content: center;
+	transition: transform 1s;
+	transform-style: preserve-3d;
+}
+
+.medium {
+
+	display: none;
+	flex-direction: column;
+	justify-content: center;
+	width: 80%;
+	padding-top: 200px;
+}
+
+.group-one-m {
+	justify-content: space-between;
+	margin: 0 auto;
+	width: 60%;
+	display: flex;
+  margin-bottom: 363px;
+}
+.group-two-m {
+	justify-content: space-between;
+	margin: 0 auto;
+	width: 60%;
+	display: flex;
+}
+
+.hard {
+	display: none;
+	flex-direction: column;
+	justify-content: center;
+	width: 90%;
+	margin: 0 auto;
+	padding-top: 200px;
+
+
+}
+
+.group-one-h {
+	margin: 0 auto;
+	width: 80%;
+	display: flex;
+	justify-content: space-between;
+  margin-bottom: 363px;
+}
+
+.group-two-h {
+	margin: 0 auto;
+	width: 80%;
+	display: flex;
+}
+
+.item {
+  width: 300px;
+  height: 100%;
+  position: relative;
+  transition: transform 1s;
+  transform-style: preserve-3d;
+}
+
+.item:hover {
+  transform: rotateZ(-10deg);
+}
+
+.item-front, .item-back  {
+	position: absolute;
+	right: 10px;
+	left: 0;
+	cursor: pointer;
+	perspective: 1000px;
+	transition: transform 1s;
+  transform-style: preserve-3d;
+  
+}
+
+ .item-back {
+	transform: rotateY(180deg);
+}
+
+
+	.item-front {
+	-webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+
+.flip {
+	cursor: pointer;
+  transform: rotateY(180deg);
+}
+
