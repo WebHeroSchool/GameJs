@@ -306,5 +306,13 @@ grid-template-columns: repeat(1,auto);
     height: 150px;
 
   }
-  
+  @media(max-width: 299px) {
+
+ .level {
+    padding-left: 44px;
+}
+.start {
+display: block;
+}
+}
 }
