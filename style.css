@@ -184,7 +184,7 @@ left: -34px;
 @media (max-width: 1174px) {
 
   .container { padding-right: 0;}
-  
+
   .titles {
     padding-left: 0px;
     margin: auto;
@@ -285,11 +285,23 @@ grid-template-columns: repeat(1,auto);
 
 @media (max-width: 518px) {
 
-  
+  .start {
+    padding-right: 0px;
+  }
      .item {
     width: 100px;
     height: 150px;
 
   }
   
+}
+
+@media(max-width: 299px) {
+
+ .level {
+    padding-left: 44px;
+}
+.start {
+display: block;
+}
 }
