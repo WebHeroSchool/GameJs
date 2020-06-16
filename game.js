@@ -7,6 +7,9 @@ const mediumGame = document.querySelector('#medium')
 const menu = document.querySelector('#menu')
 const hard = document.querySelector('#hardG')
 const hardGame = document.querySelector('#hard')
+const bug = document.querySelectorAll('#bugover')
+
+
 
 
 const simpleb = simple.onclick = function () {
@@ -36,14 +39,14 @@ hard.blur = function () {
 StartSimple = function () {
 	button.onclick = () =>{
 	menu.style.display = 'none';
-	simpleGame.style.display = 'flex'
+	simpleGame.style.display = 'grid'
 }
 }
 
 StartMedium = function () {
 	button.onclick = () => {
 	menu.style.display = 'none';
-	mediumGame.style.display = 'flex'
+	mediumGame.style.display = 'grid'
 }
 }
 
@@ -71,6 +74,7 @@ hard.addEventListener("click", event => StartHard())
 const card = document.querySelectorAll('.item')
 
 function flipCard() {
+
   this.classList.toggle('flip');
 }
 
@@ -80,3 +84,13 @@ card.forEach(card => {
     card.style.order = ramdomPos;
   });
 
+bug.forEach(bug => bug.addEventListener('click',findBug))
+
+
+function findBug() {
+mediumGame.style.display = 'none'
+	hardGame.style.display= 'none'
+		simpleGame.style.display = 'none'
+		menu.style.display = 'flex'
+
+}
