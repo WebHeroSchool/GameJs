@@ -182,16 +182,14 @@ left: -34px;
 }
 
 @media (max-width: 1174px) {
-  .container {
-    padding-right: 0;
-  }
+
+  .container { padding-right: 0;}
+  
   .titles {
     padding-left: 0px;
     margin: auto;
 }
-.title {
-  font-size: 47px;
-  }
+.title {font-size: 47px; }
 
 .subtitle {
   font-size: 19px;
